@@ -16,6 +16,7 @@ author:
   url:            https://github.com/githwd2016
 
 paginate:         10
+paginate_path:    "page:num"
 
 # Custom vars
 # version:          2.0.0
@@ -24,5 +25,4 @@ github:
   repo:           https://github.com/githwd2016/githwd2016.github.io
 
 # Gems
-gems:
-  - jekyll-paginate
+gems: [jekyll-paginate]
