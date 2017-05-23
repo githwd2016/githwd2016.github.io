@@ -1,0 +1,28 @@
+# Dependencies
+markdown:         kramdown
+highlighter:      Pygments
+
+permalink:        pretty
+# excerpt_separator:  "\n\n\n"
+
+# Setup
+title:            Tensorboy's Home
+tagline:          'Try your best'
+description:      'The website is made by <a href="http://jekyllrb.com" target="_blank">Jekyll</a> and theme is based on <a href="https://github.com/poole/lanyon" target="_blank">Lanyon</a>.'
+url:              http://githwd2016.github.io
+
+author:
+  name:           'Winton He'
+  url:            https://github.com/githwd2016
+
+paginate:         10
+
+# Custom vars
+# version:          2.0.0
+
+github:
+  repo:           https://github.com/githwd2016/githwd2016.github.io
+
+# Gems
+gems:
+  - jekyll-paginate
