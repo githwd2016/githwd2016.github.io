@@ -1,6 +1,6 @@
 # Dependencies
 markdown:         kramdown
-highlighter:      Pygments
+highlighter:      rouge
 
 permalink:        pretty
 # excerpt_separator:  "\n\n\n"
