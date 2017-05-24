@@ -3,7 +3,7 @@ layout: post
 title: Conference Time
 category: Other
 ---
-|name|Paper deadline|Acceptance notification|Conference date|
+|Name|Paper deadline|Acceptance notification|Conference date|
 |----|--------------|-----------------------|---------------|
 |coling-16|July 15, 2016|Sep 19, 2016|Dec 13-16, 2017|
 |aaai-17|Sep 9, 2016|Nov 11, 2016|Feb 4, 2017|
