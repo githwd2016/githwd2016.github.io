@@ -17,5 +17,7 @@ category: Other
 |nips-17|May 19, 2017|Sep 4, 2017|Dec 4-9, 2017|
 |cikm-17|May 23, 2017|Aug 6, 2017|Nov 6-10, 2017|
 |icdm-17|June 5,2017|Aug 15, 2017|Nov 18, 2017|
-|aaai-18|TBD|TBD|Feb 4-10, 2018|
+|wsdm-18|Aug 11, 2017|Oct 23, 2017|Feb 6-8, 2018|
+|aaai-18|Sept 11, 2017|Nov 9, 2017|Feb 4-10, 2018|
+
 
