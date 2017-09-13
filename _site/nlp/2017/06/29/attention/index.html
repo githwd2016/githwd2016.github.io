@@ -10,7 +10,7 @@
 
   <title>
     
-      What's Jekyll? &middot; Tensorboy's Home
+      Attention &middot; Tensorboy's Home
     
   </title>
 
@@ -66,6 +66,12 @@
       
     
       
+        
+          <a class="sidebar-nav-item" href="/deadline/">AI Conference Deadlines</a>
+        
+      
+    
+      
     
       
         
@@ -105,17 +111,13 @@
 
       <div class="container content">
         <div class="post">
-  <h1 class="post-title">What's Jekyll?</h1>
-  <span class="post-date">31 Dec 2013</span>
-  <p><a href="http://jekyllrb.com">Jekyll</a> is a static site generator, an open-source tool for creating simple yet powerful websites of all shapes and sizes. From <a href="https://github.com/mojombo/jekyll/blob/master/README.markdown">the project’s readme</a>:
-“\n\n\n”</p>
-<blockquote>
-  <p>Jekyll is a simple, blog aware, static site generator. It takes a template directory […] and spits out a complete, static website suitable for serving with Apache or your favorite web server. This is also the engine behind GitHub Pages, which you can use to host your project’s page or blog right here from GitHub.</p>
-</blockquote>
+  <h1 class="post-title">Attention</h1>
+  <span class="post-date">29 Jun 2017</span>
+  <p>Attention模型最初应用于图像识别，模仿人看图像时，目光的焦点在不同的物体上移动。当神经网络对图像或语言进行识别时，每次集中于部分特征上，识别更加准确。如何衡量特征的重要性呢？最直观的方法就是权重，因此，Attention模型的结果就是在每次识别时，首先计算每个特征的权值，然后对特征进行加权求和，权值越大，该特征对当前识别的贡献就大。</p>
+<h2 id="以机器翻译为例encoder-decoder结构">以机器翻译为例，Encoder-Decoder结构</h2>
+<p>Attention在Encoder-Decoder中介于Encoder和Decoder中间，首先根据Encoder和Decoder的特征计算权值，然后对Encoder的特征进行加权求和，作为Decoder的输入，其作用是将Encoder的特征以更好的方式呈献给Decoder。(1)首次将Attention模型应用到机器翻译中。</p>
 
-<p>It’s an immensely useful tool and one we encourage you to use here with Hyde.</p>
-
-<p>Find out more by <a href="https://github.com/mojombo/jekyll">visiting the project on GitHub</a>.</p>
+<p>(1)<a href="https://arxiv.org/abs/1409.0473">Bahdanau, D., Cho, K., &amp; Bengio, Y. (2014). Neural machine translation by jointly learning to align and translate. arXiv preprint arXiv:1409.0473.</a></p>
 
 </div>
 
@@ -125,18 +127,27 @@
     
       <li>
         <h3>
-          <a href="/other/2014/01/02/introducing-lanyon/">
-            Introducing Lanyon
-            <small>02 Jan 2014</small>
+          <a href="/nlp/2017/05/24/word-embedding-evaluation/">
+            Word Embedding Evaluation
+            <small>24 May 2017</small>
           </a>
         </h3>
       </li>
     
       <li>
         <h3>
-          <a href="/other/2014/01/01/example-content/">
-            Example content
-            <small>01 Jan 2014</small>
+          <a href="/other/2017/05/24/conference-time/">
+            Conference Time
+            <small>24 May 2017</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/nlp/2017/05/23/word-embedding/">
+            Word Embedding
+            <small>23 May 2017</small>
           </a>
         </h3>
       </li>

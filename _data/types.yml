@@ -1,0 +1,11 @@
+---
+- name: Data Mining
+  sub: DM
+- name: Artificial Intelligence
+  sub: AI
+- name: Machine Learning
+  sub: ML
+- name: Natural Language Processing
+  sub: NLP
+- name: Computer Vision
+  sub: CV

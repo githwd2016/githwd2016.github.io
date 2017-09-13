@@ -1,0 +1,282 @@
+---
+- name: SDM
+  year: 2018
+  id: sdm18
+  link: http://www.siam.org/meetings/sdm18/
+  deadline: "2017-10-13 23:59:00"
+  timezone: America/Los_Angeles
+  date: May 3-5, 2018
+  place: San Diego, California, USA
+  sub: DM
+  grade: B
+
+- name: DASFAA
+  year: 2018
+  id: dasfaa18
+  link: http://www.ict.griffith.edu.au/conferences/dasfaa2018/
+  deadline: "2017-10-18 23:59:00"
+  timezone: Australia/Canberra
+  date: May 21-24, 2018
+  place: Gold Coast, Australia
+  sub: DM
+  grade: B
+
+- name: ICLR
+  year: 2018
+  id: iclr18
+  link: http://iclr.cc/
+  deadline: "2017-10-27 17:00:00"
+  date: April 30-May 3, 2018
+  place: Vancouver Convention Center, Vancouver, Canada
+  sub: ML
+  grade: N
+
+- name: WWW
+  year: 2018
+  id: www18
+  link: https://www2018.thewebconf.org/
+  deadline: "2017-10-31 21:00:00"
+  timezone: Pacific/Honolulu
+  date: April 23-27, 2018
+  place: Lyon, France
+  sub: DM
+  grade: A
+
+- name: CVPR
+  year: 2018
+  id: cvpr18
+  link: http://cvpr2018.thecvf.com/
+  deadline: "2017-11-15 18:00:00"
+  timezone: America/Los_Angeles
+  date: June 18-23, 2018
+  place: Salt Lake City, Utah
+  sub: CV
+  grade: A
+
+- name: NAACL
+  year: 2018
+  id: naacl18
+  link: http://naacl2018.org/
+  deadline: "2017-12-15 23:59:59"
+  date: June 2-4, 2018
+  place: New Orleans, USA
+  sub: NLP
+  grade: C
+
+- name: COLING
+  year: 2018
+  id: coling18
+  link: http://coling2018.org/
+  deadline: "2018-03-16 23:59:59"
+  timezone: America/Adak
+  date: August 20-25, 2018
+  place: Santa Fe, New Mexico, USA
+  sub: NLP
+  grade: B
+
+- name: ACL
+  year: 2018
+  id: acl18
+  link: http://acl2018.org/
+  deadline: "TBA"
+  timezone: GMT
+  date: July 15-20, 2018
+  place: Melbourne, Australia
+  sub: NLP
+  grade: A
+
+- name: ICML
+  year: 2018
+  id: icml18
+  link: https://2017.icml.cc/Conferences/2018
+  deadline: "TBA"
+  timezone: GMT
+  date: July 10-15, 2018
+  place: Stockholm, Sweden
+  sub: ML
+  grade: A
+
+- name: IJCAI
+  year: 2018
+  id: ijcai18
+  link: http://www.ijcai-18.org/
+  deadline: "TBA"
+  date: July 13-19, 2018
+  place: Stockholm, Sweden
+  sub: AI
+  grade: A
+
+- name: KDD
+  year: 2018
+  id: kdd18
+  link: http://www.kdd.org
+  deadline: "TBA"
+  date: TBA
+  place: TBA
+  sub: DM
+  grade: A
+
+- name: EMNLP
+  year: 2018
+  id: emnlp18
+  link: TBA
+  deadline: "TBA"
+  date: TBA
+  place: TBA
+  sub: NLP
+  grade: B
+
+- name: ICCV
+  year: 2018
+  id: iccv18
+  link: TBA
+  deadline: "TBA"
+  date: TBA
+  place: TBA
+  sub: CV
+  grade: A
+
+- name: NIPS
+  year: 2018
+  id: nips18
+  link: TBA
+  deadline: "TBA"
+  date: TBA
+  place: TBA
+  sub: ML
+  grade: A
+
+- name: CIKM
+  year: 2018
+  id: cikm18
+  link: TBA
+  deadline: "TBA"
+  date: TBA
+  place: TBA
+  sub: DM
+  grade: B
+
+- name: ICDM
+  year: 2018
+  id: icdm18
+  link: TBA
+  deadline: "TBA"
+  date: TBA
+  place: TBA
+  sub: DM
+  grade: B
+
+- name: AAAI
+  year: 2018
+  id: aaai18
+  link: http://www.aaai.org/Conferences/AAAI/aaai18.php
+  deadline: "2017-09-11 23:59:59"
+  timezone: Pacific/Honolulu
+  date: February 2-7, 2018
+  place: New Orleans, Lousiana, USA
+  sub: AI
+  grade: A
+
+- name: WSDM
+  year: 2018
+  id: wsdm18
+  link: http://www.wsdm-conference.org/2018/  
+  deadline: "2017-08-12 23:59:59"
+  date: February 6-8, 2018
+  place: Los Angeles, California, USA
+  sub: DM
+  grade: B
+
+- name: SIGMOD
+  year: 2018
+  id: sigmod18
+  link: http://www.sigmod2018.org/
+  deadline: "2017-07-13 17:00:00"
+  timezone: America/Los_Angeles
+  date: June 10-15, 2018
+  place: Houston, Texas, USA
+  sub: DM
+  grade: A
+
+- name: NIPS
+  year: 2017
+  id: nips17
+  link: https://nips.cc/Conferences/2017
+  deadline: "2017-05-19 13:00:00"
+  timezone: America/Los_Angeles
+  date: December 4-9, 2017
+  place: Long Beach Convention Center, California
+  sub: ML
+  grade: A
+
+- name: ICCV
+  year: 2017
+  id: iccv17
+  link: http://iccv2017.thecvf.com/
+  deadline: "2017-03-17 23:59:59"
+  timezone: GMT
+  date: October 22-29, 2017
+  place: Venice, Italy
+  sub: CV
+  grade: A
+
+- name: ICML
+  year: 2017
+  id: icml17
+  link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=53557&copyownerid=90838
+  deadline: "2017-02-24 23:59:59"
+  date: Aug 6-11, 2017
+  place: Sydney, Australia
+  sub: ML
+  grade: A
+
+- name: IJCAI
+  year: 2017
+  id: ijcai17
+  link: http://ijcai-17.org/
+  deadline: "2017-02-19 23:59:59"
+  date: Aug 19-25, 2017
+  place: Melbourne, Australia
+  sub: AI
+  grade: A
+
+- name: KDD
+  year: 2017
+  id: kdd17
+  link: http://www.kdd.org/kdd2017/
+  deadline: "2017-02-18 05:59:59"
+  date: Aug 13-17, 2017
+  place: Halifax, Nova Scotia, Canada
+  sub: DM
+  grade: A
+
+- name: ACL
+  year: 2017
+  id: acl17
+  link: http://acl2017.org/
+  deadline: "2017-02-06 23:59:59"
+  date: July 30-August 4, 2017
+  place: Vancouver, Canada
+  sub: NLP
+  grade: A
+
+- name: ECML-PKDD
+  year: 2017
+  id: ecml17
+  link: http://ecmlpkdd2017.ijs.si/
+  deadline: "2017-04-13 23:59:59"
+  date: September 18-22, 2017
+  place: Skopje, Macedonia
+  sub: ML
+  grade: B
+
+- name: EMNLP
+  year: 2017
+  id: emnlp17
+  link: http://emnlp2017.net/
+  deadline: "2017-04-14 23:59:59"
+  timezone: America/Los_Angeles
+  date: September 7-11, 2017
+  place: Copenhagen, Denmark
+  sub: NLP
+  grade: B

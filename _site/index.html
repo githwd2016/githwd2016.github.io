@@ -66,6 +66,12 @@
       
     
       
+        
+          <a class="sidebar-nav-item" href="/deadline/">AI Conference Deadlines</a>
+        
+      
+    
+      
     
       
         
@@ -108,62 +114,415 @@
   
   <div class="post">
     <h3 class="post-title">
-      <a href="/other/2014/01/02/introducing-lanyon/">
-        Introducing Lanyon
+      <a href="/nlp/2017/06/29/attention/">
+        Attention
       </a>
     </h3>
-    <span class="post-date">02 Jan 2014</span>
-    <!-- 1233
-
-3555
+    <span class="post-date">29 Jun 2017</span>
+    <!-- Attention模型最初应用于图像识别，模仿人看图像时，目光的焦点在不同的物体上移动。当神经网络对图像或语言进行识别时，每次集中于部分特征上，识别更加准确。如何衡量特征的重要性呢？最直观的方法就是权重，因此，Attention模型的结果就是在每次识别时，首先计算每个特征的权值，然后对特征进行加权求和，权值越大，该特征对当前识别的贡献就大。
+以机器翻译为例，Encoder-Decoder结构
+Attention在Encoder-Decoder中介于Encoder和Decoder中间，首先根据Encoder和Decoder的特征计算权值，然后对Encoder的特征进行加权求和，作为Decoder的输入，其作用是将Encoder的特征以更好的方式呈献给Decoder。(1)首次将Attention模型应用到机器翻译中。
 
  -->
-    <!-- <p>1233</p>
+    <!-- <p>Attention模型最初应用于图像识别，模仿人看图像时，目光的焦点在不同的物体上移动。当神经网络对图像或语言进行识别时，每次集中于部分特征上，识别更加准确。如何衡量特征的重要性呢？最直观的方法就是权重，因此，Attention模型的结果就是在每次识别时，首先计算每个特征的权值，然后对特征进行加权求和，权值越大，该特征对当前识别的贡献就大。</p>
+<h2 id="以机器翻译为例encoder-decoder结构">以机器翻译为例，Encoder-Decoder结构</h2>
+<p>Attention在Encoder-Decoder中介于Encoder和Decoder中间，首先根据Encoder和Decoder的特征计算权值，然后对Encoder的特征进行加权求和，作为Decoder的输入，其作用是将Encoder的特征以更好的方式呈献给Decoder。(1)首次将Attention模型应用到机器翻译中。</p>
 
-<p>3555</p>
+<p>(1)<a href="https://arxiv.org/abs/1409.0473">Bahdanau, D., Cho, K., &amp; Bengio, Y. (2014). Neural machine translation by jointly learning to align and translate. arXiv preprint arXiv:1409.0473.</a></p>
+ -->
+  </div>
+  
+  <div class="post">
+    <h3 class="post-title">
+      <a href="/nlp/2017/05/24/word-embedding-evaluation/">
+        Word Embedding Evaluation
+      </a>
+    </h3>
+    <span class="post-date">24 May 2017</span>
+    <!-- 词向量的评价大体上可以分成两种方式，第一种是把词向量融入现有系统中，看对系统性能的提升；第二种是直接从语言学的角度对词向量进行分析，如相似度、语义偏移等。
+
+  提升现有系统, 最常见的有两种
+
+
+ -->
+    <!-- <p>词向量的评价大体上可以分成两种方式，第一种是把词向量融入现有系统中，看对系统性能的提升；第二种是直接从语言学的角度对词向量进行分析，如相似度、语义偏移等。</p>
+<ol>
+  <li>提升现有系统, 最常见的有两种</li>
+</ol>
+
+<p>　　	直接用于神经网络模型的输入层或者作为辅助特征扩充现有模型</p>
+<ol>
+  <li>
+    <p>语言学评价</p>
+
+    <ul>
+      <li>将词向量的相似度与人工标注的相似度做比较</li>
+      <li>类比（analogy）的方式来评测(Mikolov, 2013)</li>
+    </ul>
+  </li>
+  <li>
+    <p>Reference</p>
+
+    <ul>
+      <li>可解释性 : <a href="http://www.cs.cmu.edu/~ytsvetko/papers/qvec.pdf">Evaluation of Word Vector Representations by Subspace Alignment</a></li>
+      <li>指标: <a href="http://aclweb.org/anthology//D/D15/D15-1036.pdf">Evaluation methods for unsupervised word embeddings</a></li>
+      <li><a href="http://clic.cimec.unitn.it/marco/publications/acl2014/baroni-etal-countpredict-acl2014.pdf">Don’t count, predict! A systematic comparison of context-counting vs. context-predicting semantic vectors</a></li>
+      <li>
+        <p><a href="http://people.cs.pitt.edu/~huynv/research/deep-nets/Word%20representations%20a%20simple%20and%20general%20method%20for%20semi-supervised%20learning.pdf">Word representations :A simple and general method for semi-supervised learning</a>
+  将Word Representation分为三类，（1）Distributional Representation；（2）Clustering-based word representation；（3）Distributed Representation。</p>
+
+        <p>Distributional Representation 是基于共现矩阵， 其中为词表大小， 为Context大小， 矩阵中每行为一个词的表示向量， 每一列为某些Context内容。 构造矩阵有许多的方案和技巧，比如context的构建（左边 or 右边的Context窗口内容， Context窗口大小等）。同时，基于现有的共现矩阵，可以采用一些降维方法压缩词的表示，比如LSA中的SVD + Low Rank Approximation等。</p>
+
+        <p>Clustering-based word Representation是进行Distributional Representation中的共现矩阵“变换”成一个个聚类。 常见的模型有：brown clustering，HMM-LDA based POS and word segmentation等。</p>
+
+        <p>Distributed Representation在Section 3.1中已经讲到， 现有的词向量表示都可以归到此类中， 这类模型到现在已经提出了好几十种， 主要是Feed Forward Neural Network based和Recurrent Neural Network based两大类。</p>
+      </li>
+      <li><a href="https://arxiv.org/pdf/1301.3226.pdf">The Expressive Power of Word Embeddings</a></li>
+      <li><a href="https://arxiv.org/pdf/1507.05523.pdf">How to Generate a Good Word Embedding?</a></li>
+    </ul>
+  </li>
+</ol>
+ -->
+  </div>
+  
+  <div class="post">
+    <h3 class="post-title">
+      <a href="/other/2017/05/24/conference-time/">
+        Conference Time
+      </a>
+    </h3>
+    <span class="post-date">24 May 2017</span>
+    <!-- 
+  
+    
+      Name
+      Paper deadline
+      Acceptance notification
+      Conference date
+    
+  
+  
+    
+      coling-16
+      July 15, 2016
+      Sep 19, 2016
+      Dec 13-16, 2017
+    
+    
+      aaai-17
+      Sep 9, 2016
+      Nov 11, 2016
+      Feb 4, 2017
+    
+    
+      sdm-17
+      Oct 15, 2016
+      Dec 19, 2017
+      Apr 27, 2017
+    
+    
+      iclr-17
+      Nov 5, 2016
+      Feb 6, 2017
+      Apr 24-26, 2017
+    
+    
+      acl-17
+      Feb 6, 2017
+      Mar 30, 2017
+      July 30-Aug 4, 2017
+    
+    
+      kdd-17
+      Feb 17, 2017
+      May 19, 2017
+      Aug 13-17, 2017
+    
+    
+      ijcai-17
+      Feb 19, 2017
+      Apr 23, 2017
+      Aug 19-25, 2017
+    
+    
+      icml-17
+      Feb 24, 2017
+      May 12, 2017
+      Aug 6-11, 2017
+    
+    
+      emnlp-17
+      Apr 14, 2017
+      June 30, 2017
+      Sep 7–11, 2017
+    
+    
+      nips-17
+      May 19, 2017
+      Sep 4, 2017
+      Dec 4-9, 2017
+    
+    
+      cikm-17
+      May 23, 2017
+      Aug 6, 2017
+      Nov 6-10, 2017
+    
+    
+      icdm-17
+      June 5,2017
+      Aug 15, 2017
+      Nov 18, 2017
+    
+    
+      wsdm-18
+      Aug 12, 2017
+      Oct 23, 2017
+      Feb 6-8, 2018
+    
+    
+      aaai-18
+      Sept 11, 2017
+      Nov 9, 2017
+      Feb 4-10, 2018
+    
+    
+      coling-18
+      Mar 16, 2018
+      May 17, 2018
+      Aug 22-25, 2018
+    
+  
+
+
+ -->
+    <!-- <table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Paper deadline</th>
+      <th>Acceptance notification</th>
+      <th>Conference date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>coling-16</td>
+      <td>July 15, 2016</td>
+      <td>Sep 19, 2016</td>
+      <td>Dec 13-16, 2017</td>
+    </tr>
+    <tr>
+      <td>aaai-17</td>
+      <td>Sep 9, 2016</td>
+      <td>Nov 11, 2016</td>
+      <td>Feb 4, 2017</td>
+    </tr>
+    <tr>
+      <td>sdm-17</td>
+      <td>Oct 15, 2016</td>
+      <td>Dec 19, 2017</td>
+      <td>Apr 27, 2017</td>
+    </tr>
+    <tr>
+      <td>iclr-17</td>
+      <td>Nov 5, 2016</td>
+      <td>Feb 6, 2017</td>
+      <td>Apr 24-26, 2017</td>
+    </tr>
+    <tr>
+      <td>acl-17</td>
+      <td>Feb 6, 2017</td>
+      <td>Mar 30, 2017</td>
+      <td>July 30-Aug 4, 2017</td>
+    </tr>
+    <tr>
+      <td>kdd-17</td>
+      <td>Feb 17, 2017</td>
+      <td>May 19, 2017</td>
+      <td>Aug 13-17, 2017</td>
+    </tr>
+    <tr>
+      <td>ijcai-17</td>
+      <td>Feb 19, 2017</td>
+      <td>Apr 23, 2017</td>
+      <td>Aug 19-25, 2017</td>
+    </tr>
+    <tr>
+      <td>icml-17</td>
+      <td>Feb 24, 2017</td>
+      <td>May 12, 2017</td>
+      <td>Aug 6-11, 2017</td>
+    </tr>
+    <tr>
+      <td>emnlp-17</td>
+      <td>Apr 14, 2017</td>
+      <td>June 30, 2017</td>
+      <td>Sep 7–11, 2017</td>
+    </tr>
+    <tr>
+      <td>nips-17</td>
+      <td>May 19, 2017</td>
+      <td>Sep 4, 2017</td>
+      <td>Dec 4-9, 2017</td>
+    </tr>
+    <tr>
+      <td>cikm-17</td>
+      <td>May 23, 2017</td>
+      <td>Aug 6, 2017</td>
+      <td>Nov 6-10, 2017</td>
+    </tr>
+    <tr>
+      <td>icdm-17</td>
+      <td>June 5,2017</td>
+      <td>Aug 15, 2017</td>
+      <td>Nov 18, 2017</td>
+    </tr>
+    <tr>
+      <td>wsdm-18</td>
+      <td>Aug 12, 2017</td>
+      <td>Oct 23, 2017</td>
+      <td>Feb 6-8, 2018</td>
+    </tr>
+    <tr>
+      <td>aaai-18</td>
+      <td>Sept 11, 2017</td>
+      <td>Nov 9, 2017</td>
+      <td>Feb 4-10, 2018</td>
+    </tr>
+    <tr>
+      <td>coling-18</td>
+      <td>Mar 16, 2018</td>
+      <td>May 17, 2018</td>
+      <td>Aug 22-25, 2018</td>
+    </tr>
+  </tbody>
+</table>
 
  -->
   </div>
   
   <div class="post">
     <h3 class="post-title">
-      <a href="/other/2014/01/01/example-content/">
-        Example content
+      <a href="/nlp/2017/05/23/word-embedding/">
+        Word Embedding
       </a>
     </h3>
-    <span class="post-date">01 Jan 2014</span>
+    <span class="post-date">23 May 2017</span>
     <!-- 
+  A Neural Probabilistic Language Model
+
+
  -->
-    <!-- 
+    <!-- <ol>
+  <li>
+    <p>A Neural Probabilistic Language Model</p>
+
+    <p>三层的神经网络来构建语言模型，同样也是 n-gram 模型</p>
+  </li>
+  <li>
+    <p>Natural Language Processing (Almost) from Scratch</p>
+
+    <p>论文主要目的并不是在于生成一份好的词向量，甚至不想训练语言模型，而是要用这份词向量去完成 NLP 里面的各种任务， 比如词性标注、命名实体识别、短语识别、语义角色标注等等。</p>
+
+    <p>公布的词向量与其它词向量相比主要有两个区别：</p>
+    <ul>
+      <li>词表中只有小写单词。也就是说他把大写开头的单词和小写单词当作同一个词处理。其它的词向量都是把他们当作不同的词处理的。</li>
+      <li>词向量并不直接是上述公式的优化结果，而是在此基础上进一步跑了词性标注、命名实体识别等等一系列任务的 Multi-Task Learning 之后，二次优化得到的。也可以理解为是半监督学习得到的，而非其他方法中纯无监督学习得到的。</li>
+    </ul>
+  </li>
+  <li>
+    <p>Three new graphical models for statistical language modelling</p>
+
+    <p>一共提了 3 个模型。从最基本的 RBM 出发，一点点修改能量函数，最后得到了“Log-Bilinear”模型。</p>
+  </li>
+  <li>
+    <p>A scalable hierarchical distributed language model</p>
+
+    <p>“hierarchical log-bilinear”模型,使用了一个层级的结构做最后的预测</p>
+  </li>
+  <li>
+    <p>Statistical Language Models based on Neural Networks</p>
+
+    <p>用循环神经网络,真正充分地利用所有上文信息来预测下一个词，而不像前面的其它工作那样，只能开一个 n 个词的窗口，只用前 n 个词来预测下一个词。</p>
+  </li>
+  <li>
+    <p>Improving Word Representations via Global Context and Multiple Word Prototypes</p>
+
+    <p>第一个创新是使用全文信息辅助已有的局部信息，第二个创新是使用多个词向量来表示多义词。</p>
+  </li>
+  <li>word2vec</li>
+  <li>glove</li>
+  <li>Conclusion &amp; Renference</li>
+</ol>
+
+<table>
+  <thead>
+    <tr>
+      <th>名称</th>
+      <th>语料规模</th>
+      <th>词向量</th>
+      <th>特点</th>
+      <th>资源</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>C&amp;W</td>
+      <td>English Wikipedia + Reuters RCV1共 631M + 221M 词</td>
+      <td>130000 词 , 50 维</td>
+      <td>不区分大小写；经过有监督修正；训练了 7 周</td>
+      <td><a href="http://ml.nec-labs.com/senna/">链接</a></td>
+    </tr>
+    <tr>
+      <td>C&amp;W - Turian</td>
+      <td>Reuters RCV1 63M 词</td>
+      <td>268810 词 25、50、100、200 维</td>
+      <td>区分大小写；训练了若干周</td>
+      <td><a href="http://metaoptimize.com/projects/wordreprs/">链接</a></td>
+    </tr>
+    <tr>
+      <td>M&amp;H - Turian</td>
+      <td>Reuters RCV1</td>
+      <td>246122 词 50、100 维</td>
+      <td>区分大小写；用GPU训练了7天</td>
+      <td><a href="http://metaoptimize.com/projects/wordreprs/">链接</a></td>
+    </tr>
+    <tr>
+      <td>Mikolov</td>
+      <td>Broadcast news</td>
+      <td>82390 词 80、640、1600 维</td>
+      <td>不区分大小写；训练了若干天</td>
+      <td><a href="http://www.fit.vutbr.cz/~imikolov/rnnlm/">链接</a></td>
+    </tr>
+    <tr>
+      <td>Huang 2012</td>
+      <td>English Wikipedia</td>
+      <td>100232 词 50 维</td>
+      <td>不区分大小写；最高频的6000词，每词有10种表示</td>
+      <td><a href="http://www.socher.org/index.php/Main/ImprovingWordRepresentationsViaGlobalContextAndMultipleWordPrototypes">链接</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>这么多模型，本质是非常相似的。都是从前若干个词的词向量通过线性变换抽象出一个新的语义（隐藏层），再通过不同的方法来解析这个隐藏层。模型的差别主要就在隐藏层到输出层的语义。Bengio 2003 使用了最朴素的线性变换，直接从隐藏层映射到每个词；C&amp;W 简化了模型（不求语言模型），通过线性变换将隐藏层转换成一个打分；M&amp;H 复用了词向量，进一步强化了语义，并用层级结构加速；Mikolov 则用了分组来加速。</p>
+
+<p>Holger Schwenk 在词向量和语言模型方面也做了一些工作。</p>
  -->
   </div>
   
   <div class="post">
     <h3 class="post-title">
-      <a href="/jekyll/2013/12/31/whats-jekyll/">
-        What's Jekyll?
+      <a href="/emotion/2017/05/23/first-blog/">
+        First Blog
       </a>
     </h3>
-    <span class="post-date">31 Dec 2013</span>
-    <!-- Jekyll is a static site generator, an open-source tool for creating simple yet powerful websites of all shapes and sizes. From the project’s readme:
-“\n\n\n”
-
-  Jekyll is a simple, blog aware, static site generator. It takes a template directory […] and spits out a complete, static website suitable for serving with Apache or your favorite web server. This is also the engine behind GitHub Pages, which you can use to host your project’s page or blog right here from GitHub.
-
-
-It’s an immensely useful tool and one we encourage you to use here with Hyde.
-
-Find out more by visiting the project on GitHub.
+    <span class="post-date">23 May 2017</span>
+    <!-- 第一篇博客，也是第一次写博客。折腾了两天终于套用了Lanyon模板，改好了自己的配置。
+以后可以开始记录生活学习的点滴了。
  -->
-    <!-- <p><a href="http://jekyllrb.com">Jekyll</a> is a static site generator, an open-source tool for creating simple yet powerful websites of all shapes and sizes. From <a href="https://github.com/mojombo/jekyll/blob/master/README.markdown">the project’s readme</a>:
-“\n\n\n”</p>
-<blockquote>
-  <p>Jekyll is a simple, blog aware, static site generator. It takes a template directory […] and spits out a complete, static website suitable for serving with Apache or your favorite web server. This is also the engine behind GitHub Pages, which you can use to host your project’s page or blog right here from GitHub.</p>
-</blockquote>
-
-<p>It’s an immensely useful tool and one we encourage you to use here with Hyde.</p>
-
-<p>Find out more by <a href="https://github.com/mojombo/jekyll">visiting the project on GitHub</a>.</p>
+    <!-- <p>第一篇博客，也是第一次写博客。折腾了两天终于套用了Lanyon模板，改好了自己的配置。
+以后可以开始记录生活学习的点滴了。</p>
  -->
   </div>
   
