@@ -1,15 +1,4 @@
 ---
-- name: SDM
-  year: 2018
-  id: sdm18
-  link: http://www.siam.org/meetings/sdm18/
-  deadline: "2017-10-13 23:59:00"
-  timezone: America/Los_Angeles
-  date: May 3-5, 2018
-  place: San Diego, California, USA
-  sub: DM
-  grade: B
-
 - name: DASFAA
   year: 2018
   id: dasfaa18
@@ -63,6 +52,27 @@
   sub: NLP
   grade: C
 
+- name: IJCAI
+  year: 2018
+  id: ijcai18
+  link: http://www.ijcai-18.org/
+  deadline: "2018-01-31 23:59:59"
+  date: July 13-19, 2018
+  place: Stockholm, Sweden
+  sub: AI
+  grade: A
+
+- name: ACL
+  year: 2018
+  id: acl18
+  link: http://acl2018.org/
+  deadline: "2018-02-22 23:59:00"
+  timezone: PHOT
+  date: July 15-20, 2018
+  place: Melbourne, Australia
+  sub: NLP
+  grade: A
+
 - name: COLING
   year: 2018
   id: coling18
@@ -74,17 +84,6 @@
   sub: NLP
   grade: B
 
-- name: ACL
-  year: 2018
-  id: acl18
-  link: http://acl2018.org/
-  deadline: "TBA"
-  timezone: GMT
-  date: July 15-20, 2018
-  place: Melbourne, Australia
-  sub: NLP
-  grade: A
-
 - name: ICML
   year: 2018
   id: icml18
@@ -94,16 +93,6 @@
   date: July 10-15, 2018
   place: Stockholm, Sweden
   sub: ML
-  grade: A
-
-- name: IJCAI
-  year: 2018
-  id: ijcai18
-  link: http://www.ijcai-18.org/
-  deadline: "TBA"
-  date: July 13-19, 2018
-  place: Stockholm, Sweden
-  sub: AI
   grade: A
 
 - name: KDD
@@ -163,6 +152,17 @@
   deadline: "TBA"
   date: TBA
   place: TBA
+  sub: DM
+  grade: B
+
+- name: SDM
+  year: 2018
+  id: sdm18
+  link: http://www.siam.org/meetings/sdm18/
+  deadline: "2017-10-13 23:59:00"
+  timezone: America/Los_Angeles
+  date: May 3-5, 2018
+  place: San Diego, California, USA
   sub: DM
   grade: B
 
