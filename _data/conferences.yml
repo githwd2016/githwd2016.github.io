@@ -1,33 +1,57 @@
 ---
-- name: CVPR
+- name: COLING
   year: 2018
-  id: cvpr18
-  link: http://cvpr2018.thecvf.com/
-  deadline: "2017-11-15 18:00:00"
-  timezone: America/Los_Angeles
-  date: June 18-23, 2018
-  place: Salt Lake City, Utah
-  sub: CV
-  grade: A
-
-- name: NAACL
-  year: 2018
-  id: naacl18
-  link: http://naacl2018.org/
-  deadline: "2017-12-15 23:59:59"
-  date: June 2-4, 2018
-  place: New Orleans, USA
+  id: coling18
+  link: http://coling2018.org/
+  deadline: "2018-03-16 23:59:59"
+  timezone: America/Adak
+  date: August 20-25, 2018
+  place: Santa Fe, New Mexico, USA
   sub: NLP
-  grade: C
+  grade: B
 
-- name: IJCAI
+- name: EMNLP
   year: 2018
-  id: ijcai18
-  link: http://www.ijcai-18.org/
-  deadline: "2018-01-31 23:59:59"
-  date: July 13-19, 2018
-  place: Stockholm, Sweden
-  sub: AI
+  id: emnlp18
+  link: http://emnlp2018.org/
+  deadline: "2018-05-22 23:59:59"
+  timezone: MST
+  date: October 31 – November 4, 2018
+  place: Brussels, Belgium
+  sub: NLP
+  grade: B
+
+- name: CIKM
+  year: 2018
+  id: cikm18
+  link: http://www.cikm2018.units.it/
+  deadline: "2018-05-22 23:59:59"
+  timezone: Etc/GMT-12
+  date: 22-26 October, 2018
+  place: Lingotto, Turin, Italy
+  sub: DM
+  grade: B
+
+- name: ICDM
+  year: 2018
+  id: icdm18
+  link: http://icdm2018.org
+  deadline: "2018-06-05 23:59:59"
+  timezone: PST
+  date: November 17–20, 2018
+  place: Singapore
+  sub: DM
+  grade: B
+
+- name: ACL
+  year: 2018
+  id: acl18
+  link: http://acl2018.org/
+  deadline: "2018-02-23 11:59:00"
+  timezone: GMT
+  date: July 15-20, 2018
+  place: Melbourne, Australia
+  sub: NLP
   grade: A
 
 - name: ICML
@@ -41,87 +65,36 @@
   sub: ML
   grade: A
 
-- name: ACL
+- name: IJCAI
   year: 2018
-  id: acl18
-  link: http://acl2018.org/
-  deadline: "2018-02-23 11:59:00"
-  timezone: GMT
-  date: July 15-20, 2018
-  place: Melbourne, Australia
-  sub: NLP
+  id: ijcai18
+  link: http://www.ijcai-18.org/
+  deadline: "2018-01-31 23:59:59"
+  date: July 13-19, 2018
+  place: Stockholm, Sweden
+  sub: AI
   grade: A
 
-- name: COLING
+- name: NAACL
   year: 2018
-  id: coling18
-  link: http://coling2018.org/
-  deadline: "2018-03-16 23:59:59"
-  timezone: America/Adak
-  date: August 20-25, 2018
-  place: Santa Fe, New Mexico, USA
+  id: naacl18
+  link: http://naacl2018.org/
+  deadline: "2017-12-15 23:59:59"
+  date: June 2-4, 2018
+  place: New Orleans, USA
   sub: NLP
-  grade: B
+  grade: C
 
-- name: KDD
+- name: CVPR
   year: 2018
-  id: kdd18
-  link: http://www.kdd.org
-  deadline: "TBA"
-  date: TBA
-  place: TBA
-  sub: DM
-  grade: A
-
-- name: EMNLP
-  year: 2018
-  id: emnlp18
-  link: TBA
-  deadline: "TBA"
-  date: TBA
-  place: TBA
-  sub: NLP
-  grade: B
-
-- name: ICCV
-  year: 2018
-  id: iccv18
-  link: TBA
-  deadline: "TBA"
-  date: TBA
-  place: TBA
+  id: cvpr18
+  link: http://cvpr2018.thecvf.com/
+  deadline: "2017-11-15 18:00:00"
+  timezone: America/Los_Angeles
+  date: June 18-23, 2018
+  place: Salt Lake City, Utah
   sub: CV
   grade: A
-
-- name: NIPS
-  year: 2018
-  id: nips18
-  link: TBA
-  deadline: "TBA"
-  date: TBA
-  place: TBA
-  sub: ML
-  grade: A
-
-- name: CIKM
-  year: 2018
-  id: cikm18
-  link: TBA
-  deadline: "TBA"
-  date: TBA
-  place: TBA
-  sub: DM
-  grade: B
-
-- name: ICDM
-  year: 2018
-  id: icdm18
-  link: TBA
-  deadline: "TBA"
-  date: TBA
-  place: TBA
-  sub: DM
-  grade: B
 
 - name: WWW
   year: 2018
