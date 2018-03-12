@@ -10,6 +10,17 @@
   sub: NLP
   grade: B
 
+- name: MM
+  year: 2018
+  id: mm18
+  link: http://www.acmmm.org/2018/
+  deadline: "2018-04-08 23:59:59"
+  timezone: Pacific/Wallis
+  date: October 22-26, 2018
+  place: Seoul, Korea
+  sub: DM
+  grade: A
+
 - name: EMNLP
   year: 2018
   id: emnlp18
