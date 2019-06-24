@@ -26,4 +26,5 @@ category: Other
 |DASFFA|Nov|Next year, Jan|Next year, Feb|
 |ICLR|Nov|Next year, Feb|Next year, Apr|
 |CVPR|Nov|Next year, Mar|Next year, June|
+|NAACL|Dec|Next year, Feb|Next year, June|
 
